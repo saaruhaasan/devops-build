@@ -22,7 +22,4 @@ docker-compose.yml
 *.bak
 *.tmp
 
-# Build and deploy scripts (not needed inside image)
-build.sh
-deploy.sh
 
