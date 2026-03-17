@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-# Copy your build output to nginx's default html folder
+# Copy your build output into nginx's default html folder
 COPY ./build /usr/share/nginx/html
 
 EXPOSE 80
