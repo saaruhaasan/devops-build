@@ -1,0 +1,28 @@
+# Node modules and logs
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Git files
+.git
+.gitignore
+
+# Docker files
+.dockerignore
+docker-compose.yml
+
+# Local environment files
+.env
+.env.*
+
+# OS / editor files
+.DS_Store
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Build and deploy scripts (not needed inside image)
+build.sh
+deploy.sh
+
