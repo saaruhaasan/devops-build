@@ -4,8 +4,14 @@ pipeline {
         DEV_REPO = "saaruhaasan/dev"
         PROD_REPO = "saaruhaasan/prod"
     }
-    stages {
-        stage('Build') {
+    stages { 
+        stage('clone') {
+            steps {
+                git branch: 'dev', url: 'https://github.com/saaruhaasan/devops-build.git'
+            }
+        }
+
+	stage('Build') {
             steps {
                 sh './build.sh'
             }
